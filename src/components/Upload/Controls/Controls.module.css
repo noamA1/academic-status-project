@@ -1,0 +1,84 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5em;
+  gap: 1em;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 0.5em;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-bottom: 2px solid #748ffc;
+  color: #748ffc;
+}
+
+.formButtonControl {
+  margin-top: 3em;
+  gap: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.selectWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+button {
+  padding: 0.5em 2em;
+  outline: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btnCancel {
+  border: solid transparent 2px;
+  border-radius: 5px;
+  background-color: #fa5252;
+  font-size: 1em;
+  color: white;
+}
+
+.btnSubmit {
+  border: solid 2px #748ffc;
+  border-radius: 5px;
+  color: #748ffc;
+  background: none;
+  font-size: 1em;
+}
+
+.btnSubmit:disabled,
+.btnSubmit:disabled:hover {
+  border: solid 1px #fff;
+  color: #fff;
+  border-radius: 5px;
+  background: #ccc;
+  font-size: 1em;
+  cursor: not-allowed;
+}
+
+.btnSubmitDisabled:hover {
+  cursor: not-allowed;
+}
+
+.btnCancel:hover {
+  opacity: 0.75;
+  border: solid 2px #fa5252;
+  color: #fa5252;
+  background-color: white;
+}
+
+.btnSubmit:hover {
+  background-color: #748ffc8a;
+  border: solid 2px transparent;
+  color: white;
+}

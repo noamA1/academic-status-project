@@ -1,0 +1,99 @@
+{
+  "name": "electron_project_test",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "public/electron.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "electron-forge start",
+    "build": "react-scripts build",
+    "package": "react-scripts build && electron-forge package",
+    "make": "electron-forge make"
+  },
+  "keywords": [],
+  "author": "Noam",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/noamA1/academic-status-project.git"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.8.1",
+    "@reduxjs/toolkit": "^1.8.3",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@tisoap/react-flow-smart-edge": "^2.0.0",
+    "concurrently": "^6.3.0",
+    "cors": "^2.8.5",
+    "electron-is-dev": "^2.0.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "express": "^4.18.1",
+    "multer": "^1.4.5-lts.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-flow-renderer": "^10.3.4",
+    "react-lineto": "^3.3.0",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "wait-on": "^6.0.0",
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.65",
+    "@electron-forge/maker-deb": "^6.0.0-beta.65",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.65",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.65",
+    "@electron-forge/maker-zip": "^6.0.0-beta.65",
+    "electron": "^20.0.3"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "name": "Academic status",
+        "extraResource": [
+          "server",
+          "src"
+        ],
+        "overwrite": true,
+        "arch": "ia32",
+        "platform": "win32"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  }
+}

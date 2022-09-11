@@ -1,0 +1,31 @@
+.select {
+  width: 15em;
+  border-radius: 5px;
+  border: solid 2px #748ffc;
+  display: flex;
+  direction: rtl;
+  padding: 0.5em;
+  outline: none;
+  color: #748ffc;
+  font-size: 1.2em;
+}
+
+.select:focus,
+select:hover {
+  border: 2px dashed #748ffc80;
+  color: #748ffc86;
+  cursor: pointer;
+}
+
+.select_label {
+  color: #748ffc;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  direction: rtl;
+}
